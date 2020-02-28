@@ -261,7 +261,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="uON-KZ-6Rm">
-                                <rect key="frame" x="57" y="0.0" width="298" height="258.5"/>
+                                <rect key="frame" x="57" y="0.0" width="298" height="258.50000000000011"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -661,77 +661,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OBI-GA-1sd">
-                                <rect key="frame" x="0.0" y="56" width="375" height="20"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="DTq-Ca-Zzu"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ijs-Wb-mVy">
-                                <rect key="frame" x="0.0" y="87" width="375" height="511"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="sectionIndexBackgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="FUZ-r2-Xnq">
-                                    <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GuideCell" textLabel="esp-iM-kCI" style="IBUITableViewCellStyleDefault" id="dg7-nz-gfg">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dg7-nz-gfg" id="0f9-or-Qwe">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="esp-iM-kCI">
-                                                    <rect key="frame" x="15" y="0.0" width="326" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        </tableViewCellContentView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AEW-1c-Mdc">
+                                <rect key="frame" x="0.0" y="56" width="375" height="591"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdD-EN-SdN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="148.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1eT-Db-HAs">
+                                                <rect key="frame" x="20" y="20" width="335" height="128.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="PI4-SP-ekX" id="Neq-ar-HXa"/>
-                                    <outlet property="delegate" destination="PI4-SP-ekX" id="25m-ua-kBz"/>
-                                </connections>
-                            </tableView>
+                                        <constraints>
+                                            <constraint firstItem="1eT-Db-HAs" firstAttribute="leading" secondItem="YdD-EN-SdN" secondAttribute="leading" constant="20" symbolic="YES" id="CKW-SB-XtW"/>
+                                            <constraint firstAttribute="bottom" secondItem="1eT-Db-HAs" secondAttribute="bottom" id="k8o-7e-mPU"/>
+                                            <constraint firstAttribute="trailing" secondItem="1eT-Db-HAs" secondAttribute="trailing" constant="20" symbolic="YES" id="p3o-Iv-3dB"/>
+                                            <constraint firstItem="1eT-Db-HAs" firstAttribute="top" secondItem="YdD-EN-SdN" secondAttribute="top" constant="20" symbolic="YES" id="zz4-Ns-KdP"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k5i-gc-oyb">
+                                        <rect key="frame" x="0.0" y="148.5" width="375" height="442.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GuideCell" textLabel="4Ih-yd-OvG" style="IBUITableViewCellStyleDefault" id="DB5-6x-ggt">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DB5-6x-ggt" id="HLi-sF-wmt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Ih-yd-OvG">
+                                                            <rect key="frame" x="15" y="0.0" width="326" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="OBI-GA-1sd" firstAttribute="leading" secondItem="DM6-j3-eJj" secondAttribute="leading" id="E5X-T0-xAI"/>
-                            <constraint firstItem="DM6-j3-eJj" firstAttribute="trailing" secondItem="OBI-GA-1sd" secondAttribute="trailing" id="HGv-Ot-XX3"/>
-                            <constraint firstItem="OBI-GA-1sd" firstAttribute="top" secondItem="DM6-j3-eJj" secondAttribute="top" id="Kar-xN-vjh"/>
-                            <constraint firstItem="DM6-j3-eJj" firstAttribute="bottom" secondItem="Ijs-Wb-mVy" secondAttribute="bottom" id="OEK-IM-jc8"/>
-                            <constraint firstItem="DM6-j3-eJj" firstAttribute="bottom" secondItem="Ijs-Wb-mVy" secondAttribute="bottom" id="PB5-Wn-WXF"/>
-                            <constraint firstItem="Ijs-Wb-mVy" firstAttribute="firstBaseline" secondItem="OBI-GA-1sd" secondAttribute="baseline" constant="11" symbolType="layoutAnchor" id="Yn7-iX-ufQ"/>
-                            <constraint firstItem="DM6-j3-eJj" firstAttribute="trailing" secondItem="Ijs-Wb-mVy" secondAttribute="trailing" id="a6y-iZ-6AW"/>
-                            <constraint firstItem="Ijs-Wb-mVy" firstAttribute="leading" secondItem="DM6-j3-eJj" secondAttribute="leading" id="bjV-fO-loh"/>
+                            <constraint firstItem="AEW-1c-Mdc" firstAttribute="bottom" secondItem="DM6-j3-eJj" secondAttribute="bottom" constant="49" id="Lu7-Oh-V0W"/>
+                            <constraint firstItem="AEW-1c-Mdc" firstAttribute="leading" secondItem="DM6-j3-eJj" secondAttribute="leading" id="UC6-ZQ-bDv"/>
+                            <constraint firstItem="AEW-1c-Mdc" firstAttribute="top" secondItem="DM6-j3-eJj" secondAttribute="top" id="kmS-Mn-OLr"/>
+                            <constraint firstItem="AEW-1c-Mdc" firstAttribute="trailing" secondItem="DM6-j3-eJj" secondAttribute="trailing" constant="20" symbolic="YES" id="o3P-YB-RHw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DM6-j3-eJj"/>
                     </view>
                     <navigationItem key="navigationItem" id="WOI-Vj-Voe"/>
                     <connections>
-                        <outlet property="Description" destination="OBI-GA-1sd" id="4EB-Sz-Kc1"/>
-                        <outlet property="DescriptionHC" destination="DTq-Ca-Zzu" id="Huk-wI-78H"/>
-                        <outlet property="tableView" destination="Ijs-Wb-mVy" id="sdZ-ZV-Wwc"/>
+                        <outlet property="Description" destination="1eT-Db-HAs" id="LbL-HT-Lh7"/>
+                        <outlet property="navBar" destination="WOI-Vj-Voe" id="uA1-vh-AfY"/>
+                        <outlet property="tableview" destination="k5i-gc-oyb" id="WOh-JD-vID"/>
                         <segue destination="ABI-gJ-IB5" kind="show" identifier="showDetails" id="bXZ-er-Kes"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xh6-CN-5Mz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2329" y="-697"/>
+            <point key="canvasLocation" x="2328.8000000000002" y="-697.60119940029995"/>
         </scene>
         <!--Detailed View Controller-->
         <scene sceneID="E5c-5T-ICG">
@@ -761,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yve-kH-Zu0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3086" y="-697"/>
+            <point key="canvasLocation" x="3085.5999999999999" y="-697.60119940029995"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="HaD-tf-OhY">
